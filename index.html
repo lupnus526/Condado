@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakele - MMORPG Online</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Guildas</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container">
+
+        <!-- TELA 1: HOME (CONTEÚDO PRINCIPAL) -->
+        <div id="homeView" class="page-section">
+            <!-- LOGO COM ÓRBITA DE LUZ E ESPÍRITO FANTASMA -->
+            <div class="banner-logo-container">
+                <div class="ghost-layer ghost-behind">👻</div>
+                <div class="orbit-light-ring">
+                    <div class="comet-spark"></div>
+                </div>
+                <img src="logo-kakele.png" alt="Kakele MMORPG" class="banner-logo-img">
+                <div class="ghost-layer ghost-front">👻</div>
+            </div>
+
+            <!-- FEATURES GRID (4 ÍCONES SUPERIORES) -->
+            <div class="features-grid">
+                <!-- CARD DE CLASSES (Aciona a troca de tela) -->
+                <div class="feature-card" id="openClassesView">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Classes</h3>
+                    <p>Escolha sua classe e desenvolva seu personagem do seu jeito.</p>
+                    <a href="#">Conheça as classes →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3>Missões</h3>
+                    <p>Explore o mundo, complete missões e ganhe grandes recompensas.</p>
+                    <a href="#">Ver missões →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🐉</div>
+                    <h3>Monstros</h3>
+                    <p>Enfrente criaturas únicas e evolua com cada batalha.</p>
+                    <a href="#">Ver monstros →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏰</div>
+                    <h3>Guildas</h3>
+                    <p>Faça parte de uma guilda e conquiste grandes objetivos.</p>
+                    <a href="#">Ver guildas →</a>
+                </div>
+            </div>
+
+            <!-- BOTTOM PANELS GRID (2 PAINÉIS INFERIORES) -->
+            <div class="bottom-panels-grid" style="margin-top: 25px;">
+                <div class="panel-box">
+                    <h3>Servidor <span class="status-online">Online</span></h3>
+                    <div class="server-stat-row">
+                        <span>Jogadores Online:</span>
+                        <strong>1,245</strong>
+                    </div>
+                    <div class="server-stat-row">
+                        <span>Versão:</span>
+                        <strong>4.5.2</strong>
+                    </div>
+                    <div class="server-stat-row">
+                        <span>Exp Rate:</span>
+                        <strong>2x (Weekend)</strong>
+                    </div>
+                    <button class="btn-secondary">Status Completo</button>
+                </div>
+
+                <div class="panel-box">
+                    <h3>Comunidade 💬</h3>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.4;">
+                        Junte-se à nossa comunidade no Discord para trocar ideias, tirar dúvidas e encontrar amigos.
+                    </p>
+                    <button class="btn-secondary" style="margin-top: auto;">Entrar no Discord</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TELA 2: NOVO PAINEL DE CLASSES -->
+        <div id="classesView" class="classes-main-panel">
+            <div class="classes-panel-header" style="justify-content: flex-end;">
+                <button class="btn-back" id="backToHome">&larr; Voltar ao Início</button>
+            </div>
+
+            <div class="classes-full-grid">
+                <!-- Alquimista -->
+                <div class="class-detailed-card">
+                    <div class="class-card-header">
+                        <img src="alchemist.png" alt="Alquimista" class="class-img">
+                        <h3>Alquimista</h3>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">Boticário de Batalha</p>
+                    <p>O Alquimista é a classe de suporte dedicada. Mantenha seu time vivo nas raides de masmorra mais difíceis com magias de cura contínua e buffs poderosos que economizam poções e recursos valiosos do grupo.</p>
+                </div>
+
+                <!-- Furioso -->
+                <div class="class-detailed-card">
+                    <div class="class-card-header">
+                        <img src="berserker.png" alt="Furioso" class="class-img">
+                        <h3>Furioso</h3>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">Fúria Feita Arma</p>
+                    <p>Movido pela fúria, o Furioso é mestre do combate corpo a corpo e um pesadelo para usuários de magia graças à alta resistência mágica. Usando a própria vida como recurso para potencializar seus ataques, é a classe ideal para quem prefere explorar o mundo e evoluir sozinho.</p>
+                </div>
+
+                <!-- Caçador -->
+                <div class="class-detailed-card">
+                    <div class="class-card-header">
+                        <img src="hunter.png" alt="Caçador" class="class-img">
+                        <h3>Caçador</h3>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">Morte à Distância</p>
+                    <p>Especialista em combate à distância, o Caçador domina agilidade, esquiva e furtividade. Atinja os inimigos de longe e desapareça de encontros perigosos antes mesmo de ser notado!</p>
+                </div>
+
+                <!-- Mago -->
+                <div class="class-detailed-card">
+                    <div class="class-card-header">
+                        <img src="mage.png" alt="Mago" class="class-img">
+                        <h3>Mago</h3>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">Mestre dos Elementos</p>
+                    <p>Com o maior dano por segundo (DPS) de todas as classes, o Mago sacrifica defesa por puro poder destrutivo. Essa classe aniquila hordas de monstros com magias em área e incapacita os inimigos com debuffs letais.</p>
+                </div>
+
+                <!-- Guerreiro -->
+                <div class="class-detailed-card">
+                    <div class="class-card-header">
+                        <img src="warrior.png" alt="Guerreiro" class="class-img">
+                        <h3>Guerreiro</h3>
+                    </div>
+                    <p style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">A Linha Inquebrável</p>
+                    <p>O Guerreiro é o protetor supremo. Com resistência máxima a dano físico e uma reserva enorme de vida, essa classe lidera raides em grupo e enfrentamentos de boss absorvendo os golpes mais devastadores do jogo.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kakele MMORPG. Todos os direitos reservados. Desenvolvido com estilo.</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script>
+        // Script dos Vagalumes Mágicos
+        function createFireflies() {
+            const totalFireflies = 25;
+            for (let i = 0; i < totalFireflies; i++) {
+                let firefly = document.createElement('div');
+                firefly.classList.add('firefly');
+                firefly.style.left = Math.random() * 100 + 'vw';
+                firefly.style.top = Math.random() * 100 + 'vh';
+                let duration = Math.random() * 8 + 6;
+                let delay = Math.random() * 5;
+                firefly.style.animationDuration = duration + 's';
+                firefly.style.animationDelay = delay + 's';
+                let moveX = (Math.random() - 0.5) * 200 + 'px';
+                let moveY = (Math.random() - 0.5) * 200 + 'px';
+                firefly.style.setProperty('--move-x', moveX);
+                firefly.style.setProperty('--move-y', moveY);
+                document.body.appendChild(firefly);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', createFireflies);
+    </script>
+</body>
+</html>
